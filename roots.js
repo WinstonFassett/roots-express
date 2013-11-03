@@ -62,7 +62,7 @@ exports.add_compiler = function(assets){
         filename: sourcePath
       };
 
-      stylus(source, options).use(roots_css()).set('compress', this.compress).set('include css', true).render(callback);
+      stylus(source, options).set('compress', this.compress).set('include css', true).render(callback);
       return result;
     }
   }
